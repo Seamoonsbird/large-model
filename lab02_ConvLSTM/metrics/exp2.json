@@ -1,0 +1,15 @@
+{
+  "group": "exp2",
+  "name": "隐藏通道64",
+  "seed": 42,
+  "mse": 0.004233,
+  "mae": 0.016213,
+  "time_s": 550.2,
+  "params": 150593,
+  "fig": "result_exp2.png",
+  "k_in": 4,
+  "layers": 1,
+  "hid": 64,
+  "k": 3,
+  "loss": "mse"
+}

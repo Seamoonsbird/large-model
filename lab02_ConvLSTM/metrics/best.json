@@ -1,0 +1,31 @@
+{
+  "trials": [
+    {
+      "group": "best",
+      "seed": 42,
+      "mse": 0.002855,
+      "mae": 0.010172,
+      "time_s": 433.0,
+      "params": 310945
+    },
+    {
+      "group": "best",
+      "seed": 43,
+      "mse": 0.002604,
+      "mae": 0.009749,
+      "time_s": 431.6,
+      "params": 310945
+    },
+    {
+      "group": "best",
+      "seed": 44,
+      "mse": 0.002753,
+      "mae": 0.010586,
+      "time_s": 431.6,
+      "params": 310945
+    }
+  ],
+  "avg_mse": 0.002737,
+  "avg_mae": 0.010169,
+  "avg_time_s": 432.1
+}

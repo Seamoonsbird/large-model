@@ -1,0 +1,15 @@
+{
+  "group": "exp1",
+  "name": "加深层数(2层)",
+  "seed": 42,
+  "mse": 0.003787,
+  "mae": 0.012469,
+  "time_s": 382.5,
+  "params": 112289,
+  "fig": "result_exp1.png",
+  "k_in": 4,
+  "layers": 2,
+  "hid": 32,
+  "k": 3,
+  "loss": "mse"
+}

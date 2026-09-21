@@ -1,0 +1,15 @@
+{
+  "group": "baseline",
+  "name": "基线 Baseline",
+  "seed": 42,
+  "mse": 0.004558,
+  "mae": 0.015812,
+  "time_s": 189.3,
+  "params": 38433,
+  "fig": "result_baseline.png",
+  "k_in": 4,
+  "layers": 1,
+  "hid": 32,
+  "k": 3,
+  "loss": "mse"
+}

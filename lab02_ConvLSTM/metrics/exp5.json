@@ -1,0 +1,15 @@
+{
+  "group": "exp5",
+  "name": "全连接FlattenLSTM",
+  "seed": 42,
+  "mse": 0.00726,
+  "mae": 0.033611,
+  "time_s": 8.8,
+  "params": 1575936,
+  "fig": "result_exp5.png",
+  "k_in": 4,
+  "layers": 1,
+  "hid": 32,
+  "k": 3,
+  "loss": "mse"
+}

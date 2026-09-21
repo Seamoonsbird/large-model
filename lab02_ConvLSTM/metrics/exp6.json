@@ -1,0 +1,15 @@
+{
+  "group": "exp6",
+  "name": "L1损失",
+  "seed": 42,
+  "mse": 0.01187,
+  "mae": 0.012642,
+  "time_s": 189.1,
+  "params": 38433,
+  "fig": "result_exp6.png",
+  "k_in": 4,
+  "layers": 1,
+  "hid": 32,
+  "k": 3,
+  "loss": "l1"
+}

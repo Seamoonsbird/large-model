@@ -1,0 +1,15 @@
+{
+  "group": "exp4",
+  "name": "看8帧",
+  "seed": 42,
+  "mse": 0.00465,
+  "mae": 0.014539,
+  "time_s": 335.3,
+  "params": 38433,
+  "fig": "result_exp4.png",
+  "k_in": 8,
+  "layers": 1,
+  "hid": 32,
+  "k": 3,
+  "loss": "mse"
+}

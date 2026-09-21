@@ -1,0 +1,15 @@
+{
+  "group": "exp3",
+  "name": "卷积核K=5",
+  "seed": 42,
+  "mse": 0.003601,
+  "mae": 0.013216,
+  "time_s": 360.2,
+  "params": 106017,
+  "fig": "result_exp3.png",
+  "k_in": 4,
+  "layers": 1,
+  "hid": 32,
+  "k": 5,
+  "loss": "mse"
+}
