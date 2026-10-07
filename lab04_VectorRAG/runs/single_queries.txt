@@ -1,0 +1,27 @@
+===== 单题记录 =====
+[embed] 已加载 paraphrase-multilingual-MiniLM-L12-v2
+
+[Q01·multi]: 《大模型通识课》授课教师所在学院的行政负责人是谁？
+检索到的文档:  ['doc04', 'doc06', 'doc05', 'doc11', 'doc07']
+
+[embed] 已加载 paraphrase-multilingual-MiniLM-L12-v2
+[graph] 实体 45 个 / 三元组 40 条 / 社区 10 个
+
+[Q01·multi]: 《大模型通识课》授课教师所在学院的行政负责人是谁？
+检索到的文档:  ['doc06', 'doc11', 'doc02', 'doc04', 'doc10']
+
+[embed] 已加载 paraphrase-multilingual-MiniLM-L12-v2
+[graph] 实体 45 个 / 三元组 40 条 / 社区 10 个
+
+[Q01·multi]: 《大模型通识课》授课教师所在学院的行政负责人是谁？
+检索到的文档:  ['doc02', 'doc04', 'doc06', 'doc07', 'doc08']
+
+[embed] 已加载 paraphrase-multilingual-MiniLM-L12-v2
+
+[Q11·global]: 云山大学有哪些科研平台？分别依托谁建设？
+检索到的文档:  ['doc05', 'doc03', 'doc10', 'doc02', 'doc15']
+
+[embed] 已加载 paraphrase-multilingual-MiniLM-L12-v2
+
+[Q13·global]: 人工智能学院有哪些教师？各自做什么研究方向？
+检索到的文档:  ['doc02', 'doc10', 'doc15', 'doc11', 'doc13']

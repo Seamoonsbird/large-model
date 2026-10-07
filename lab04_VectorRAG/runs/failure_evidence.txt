@@ -1,0 +1,15 @@
+  [Vector RAG] Q08(fact) ✔ 检索=['doc13', 'doc12', 'doc05', 'doc06', 'doc11'] 证据=['doc13'] rank=1
+  [Vector RAG] Q17(fact) ✔ 检索=['doc14', 'doc07', 'doc15', 'doc10', 'doc05'] 证据=['doc14'] rank=1
+  [Vector RAG] Q02(multi) ✔ 检索=['doc07', 'doc06', 'doc04', 'doc11', 'doc15'] 证据=['doc11', 'doc04', 'doc02'] rank=3
+  [Vector RAG] Q11(global) ✔ 检索=['doc10', 'doc05', 'doc15', 'doc01', 'doc03'] 证据=['doc10', 'doc02', 'doc03'] rank=1
+  [Vector RAG] Q13(global) ✔ 检索=['doc04', 'doc02', 'doc07', 'doc10', 'doc11'] 证据=['doc04'] rank=1
+  [GraphRAG] Q08(fact) ✔ 检索=['doc13'] 证据=['doc13'] rank=1
+  [GraphRAG] Q17(fact) ✘ 检索=['doc09', 'doc11', 'doc13', 'doc02', 'doc04'] 证据=['doc14'] rank=0
+  [GraphRAG] Q02(multi) ✔ 检索=['doc11', 'doc06', 'doc02', 'doc04', 'doc10'] 证据=['doc11', 'doc04', 'doc02'] rank=1
+  [GraphRAG] Q11(global) ✘ 检索=['doc01'] 证据=['doc10', 'doc02', 'doc03'] rank=0
+  [GraphRAG] Q13(global) ✔ 检索=['doc11', 'doc04', 'doc02', 'doc10', 'doc06'] 证据=['doc04'] rank=2
+  [WikiRAG] Q08(fact) ✔ 检索=['doc11', 'doc13', 'doc01', 'doc12', 'doc14'] 证据=['doc13'] rank=2
+  [WikiRAG] Q17(fact) ✔ 检索=['doc01', 'doc12', 'doc14', 'doc07', 'doc08'] 证据=['doc14'] rank=3
+  [WikiRAG] Q02(multi) ✔ 检索=['doc06', 'doc07', 'doc08', 'doc11', 'doc13'] 证据=['doc11', 'doc04', 'doc02'] rank=4
+  [WikiRAG] Q11(global) ✔ 检索=['doc05', 'doc03', 'doc10', 'doc02', 'doc15'] 证据=['doc10', 'doc02', 'doc03'] rank=2
+  [WikiRAG] Q13(global) ✘ 检索=['doc02', 'doc10', 'doc15', 'doc11', 'doc13'] 证据=['doc04'] rank=0

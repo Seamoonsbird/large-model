@@ -1,0 +1,52 @@
+[embed] 已加载 paraphrase-multilingual-MiniLM-L12-v2
+[graph] 实体 45 个 / 三元组 40 条 / 社区 10 个
+
+===== GraphRAG scope=local（20题） =====
+  Q06(fact) 检=['doc01'] 证=['doc01'] hit=Y rank=1 R=1/1
+  Q07(fact) 检=['doc09'] 证=['doc09'] hit=Y rank=1 R=1/1
+  Q08(fact) 检=['doc13'] 证=['doc13'] hit=Y rank=1 R=1/1
+  Q09(fact) 检=['doc02', 'doc04', 'doc11', 'doc10', 'doc07'] 证=['doc02'] hit=Y rank=1 R=1/1
+  Q10(fact) 检=['doc12', 'doc06', 'doc04', 'doc11'] 证=['doc12'] hit=Y rank=1 R=1/1
+  Q16(fact) 检=['doc06', 'doc02', 'doc11', 'doc10', 'doc04'] 证=['doc06'] hit=Y rank=1 R=1/1
+  Q17(fact) 检=['doc12', 'doc06', 'doc04', 'doc11'] 证=['doc12'] hit=Y rank=1 R=1/1
+local fact       Recall=1.000 MRR=1.000 完整=7/7
+  Q01(multi) 检=['doc06', 'doc11', 'doc02', 'doc04', 'doc10'] 证=['doc04', 'doc06', 'doc02'] hit=Y rank=1 R=3/3
+  Q02(multi) 检=['doc11', 'doc06', 'doc02', 'doc04', 'doc10'] 证=['doc11', 'doc04', 'doc02'] hit=Y rank=1 R=3/3
+  Q03(multi) 检=['doc10', 'doc02', 'doc04', 'doc11', 'doc06'] 证=['doc10', 'doc02'] hit=Y rank=1 R=2/2
+  Q04(multi) 检=['doc08', 'doc07', 'doc04', 'doc02', 'doc10'] 证=['doc07', 'doc04'] hit=Y rank=2 R=2/2
+  Q05(multi) 检=['doc11', 'doc02', 'doc04', 'doc10'] 证=['doc11', 'doc04'] hit=Y rank=1 R=2/2
+  Q18(multi) 检=['doc02', 'doc08', 'doc07', 'doc04', 'doc10'] 证=['doc07', 'doc04', 'doc02'] hit=Y rank=1 R=3/3
+  Q19(multi) 检=['doc11', 'doc02', 'doc04', 'doc10', 'doc06'] 证=['doc11', 'doc04'] hit=Y rank=1 R=2/2
+local multi      Recall=1.000 MRR=0.929 完整=7/7
+  Q11(global) 检=['doc01'] 证=['doc10', 'doc02', 'doc03'] hit=N rank=0 R=0/3
+  Q12(global) 检=['doc09', 'doc11', 'doc13', 'doc02', 'doc04'] 证=['doc09'] hit=Y rank=1 R=1/1
+  Q13(global) 检=['doc11', 'doc04', 'doc02', 'doc10', 'doc06'] 证=['doc04'] hit=Y rank=2 R=1/1
+  Q14(global) 检=['doc02', 'doc04', 'doc06', 'doc07', 'doc08'] 证=['doc08'] hit=Y rank=5 R=1/1
+  Q15(global) 检=['doc02', 'doc04', 'doc06', 'doc07', 'doc08'] 证=['doc06', 'doc11'] hit=Y rank=3 R=1/2
+  Q20(global) 检=['doc02', 'doc03', 'doc10', 'doc15', 'doc09'] 证=['doc10', 'doc15'] hit=Y rank=3 R=2/2
+local global     Recall=0.750 MRR=0.394 完整=4/6
+
+===== GraphRAG scope=global（20题） =====
+  Q06(fact) 检=['doc02', 'doc03', 'doc10', 'doc15', 'doc09'] 证=['doc01'] hit=N rank=0 R=0/1
+  Q07(fact) 检=['doc09', 'doc11', 'doc13', 'doc02', 'doc03'] 证=['doc09'] hit=Y rank=1 R=1/1
+  Q08(fact) 检=['doc09', 'doc11', 'doc13', 'doc02', 'doc04'] 证=['doc13'] hit=Y rank=3 R=1/1
+  Q09(fact) 检=['doc02', 'doc04', 'doc06', 'doc07', 'doc08'] 证=['doc02'] hit=Y rank=1 R=1/1
+  Q10(fact) 检=['doc09', 'doc11', 'doc13', 'doc02', 'doc04'] 证=['doc12'] hit=N rank=0 R=0/1
+  Q16(fact) 检=['doc02', 'doc04', 'doc06', 'doc07', 'doc08'] 证=['doc06'] hit=Y rank=3 R=1/1
+  Q17(fact) 检=['doc09', 'doc11', 'doc13', 'doc02', 'doc03'] 证=['doc12'] hit=N rank=0 R=0/1
+globalfact       Recall=0.571 MRR=0.381 完整=4/7
+  Q01(multi) 检=['doc02', 'doc04', 'doc06', 'doc07', 'doc08'] 证=['doc04', 'doc06', 'doc02'] hit=Y rank=1 R=3/3
+  Q02(multi) 检=['doc02', 'doc04', 'doc06', 'doc07', 'doc08'] 证=['doc11', 'doc04', 'doc02'] hit=Y rank=1 R=2/3
+  Q03(multi) 检=['doc02', 'doc03', 'doc10', 'doc15', 'doc04'] 证=['doc10', 'doc02'] hit=Y rank=1 R=2/2
+  Q04(multi) 检=['doc02', 'doc04', 'doc06', 'doc07', 'doc08'] 证=['doc07', 'doc04'] hit=Y rank=2 R=2/2
+  Q05(multi) 检=['doc02', 'doc04', 'doc06', 'doc07', 'doc08'] 证=['doc11', 'doc04'] hit=Y rank=2 R=1/2
+  Q18(multi) 检=['doc02', 'doc04', 'doc06', 'doc07', 'doc08'] 证=['doc07', 'doc04', 'doc02'] hit=Y rank=1 R=3/3
+  Q19(multi) 检=['doc02', 'doc04', 'doc06', 'doc07', 'doc08'] 证=['doc11', 'doc04'] hit=Y rank=2 R=1/2
+globalmulti      Recall=0.810 MRR=0.786 完整=4/7
+  Q11(global) 检=['doc02', 'doc03', 'doc10', 'doc15', 'doc04'] 证=['doc10', 'doc02', 'doc03'] hit=Y rank=1 R=3/3
+  Q12(global) 检=['doc09', 'doc11', 'doc13', 'doc02', 'doc04'] 证=['doc09'] hit=Y rank=1 R=1/1
+  Q13(global) 检=['doc02', 'doc04', 'doc06', 'doc07', 'doc08'] 证=['doc04'] hit=Y rank=2 R=1/1
+  Q14(global) 检=['doc02', 'doc04', 'doc06', 'doc07', 'doc08'] 证=['doc08'] hit=Y rank=5 R=1/1
+  Q15(global) 检=['doc02', 'doc04', 'doc06', 'doc07', 'doc08'] 证=['doc06', 'doc11'] hit=Y rank=3 R=1/2
+  Q20(global) 检=['doc02', 'doc03', 'doc10', 'doc15', 'doc09'] 证=['doc10', 'doc15'] hit=Y rank=3 R=2/2
+globalglobal     Recall=0.917 MRR=0.561 完整=5/6
