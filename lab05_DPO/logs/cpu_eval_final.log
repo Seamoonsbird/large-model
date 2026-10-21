@@ -1,0 +1,73 @@
+/home/user/.local/lib/python3.12/site-packages/transformers/models/auto/modeling_auto.py:2284: FutureWarning: The class `AutoModelForVision2Seq` is deprecated and will be removed in v5.0. Please use `AutoModelForImageTextToText` instead.
+  warnings.warn(
+
+===== 基线 × 15 题 =====
+[P01·count] × Q: 图中有几个红色圆形？  A: 1.（gold: 2）
+[P02·count] × Q: 图中有几个绿色圆形？  A: 1.（gold: 3）
+[P03·count] × Q: 图中有几个黄色方形？  A: 1.（gold: 2）
+[P04·count] × Q: 图中有几个黄色圆形？  A: 1.（gold: 4）
+[P05·count] √ Q: 图中有几个蓝色圆形？  A: 1. 3.（gold: 3）
+基线        count   正确 1/5
+[P06·attr] × Q: 图中蓝色的图形是什么形状？  A: 在图中，黄色的图形是一种深�（gold: 方形）
+[P07·attr] × Q: 图中红色的图形是什么形状？  A: The image is a square with a red circle inside it.（gold: 圆形）
+[P08·attr] × Q: 图中绿色的图形是什么形状？  A: 形状是黄色。（gold: 方形）
+[P09·attr] × Q: 图中黄色的图形是什么形状？  A: The image is a circle with a green outline.（gold: 圆形）
+[P10·attr] × Q: 图中蓝色的图形是什么形状？  A: 在图中，有三个图形。（gold: 方形）
+基线        attr    正确 0/5
+[P11·exist] × Q: 图里有没有黄色方形？  A: No.（gold: 有）
+[P12·exist] × Q: 图里有没有红色圆形？  A: No, there are no orange or red squares in the image.（gold: 没有）
+[P13·exist] × Q: 图里有没有绿色圆形？  A: No.（gold: 有）
+[P14·exist] × Q: 图里有没有绿色方形？  A: No.（gold: 没有）
+[P15·exist] × Q: 图里有没有蓝色图形？  A: No.（gold: 没有）
+基线        exist   正确 0/5
+基线        总计    正确 1/15
+
+
+===== SFT × 15 题 =====
+[P01·count] × Q: 图中有几个红色圆形？  A: 1. 0.（gold: 2）
+[P02·count] × Q: 图中有几个绿色圆形？  A: 1.（gold: 3）
+[P03·count] √ Q: 图中有几个黄色方形？  A: 1. 2. 3. 4. 5. 6. 7. 8.（gold: 2）
+[P04·count] × Q: 图中有几个黄色圆形？  A: 在图中，有几个黄色圆形？（gold: 4）
+[P05·count] √ Q: 图中有几个蓝色圆形？  A: 1. 3.（gold: 3）
+SFT       count   正确 2/5
+[P06·attr] × Q: 图中蓝色的图形是什么形状？  A: The image is a square with a red dot inside it.（gold: 方形）
+[P07·attr] × Q: 图中红色的图形是什么形状？  A: The image is a square with a red circle inside it.（gold: 圆形）
+[P08·attr] × Q: 图中绿色的图形是什么形状？  A: The image is a circular shape with a green square in the center.（gold: 方形）
+[P09·attr] × Q: 图中黄色的图形是什么形状？  A: The image is a circle with a green outline.（gold: 圆形）
+[P10·attr] × Q: 图中蓝色的图形是什么形状？  A: The image depicts a square-shaped grid with three smaller squares placed inside it. The squares are arranged in a way that（gold: 方形）
+SFT       attr    正确 0/5
+[P11·exist] × Q: 图里有没有黄色方形？  A: No.（gold: 有）
+[P12·exist] × Q: 图里有没有红色圆形？  A: No, there are no orange or red squares in the image.（gold: 没有）
+[P13·exist] × Q: 图里有没有绿色圆形？  A: No.（gold: 有）
+[P14·exist] × Q: 图里有没有绿色方形？  A: No.（gold: 没有）
+[P15·exist] × Q: 图里有没有蓝色图形？  A: No.（gold: 没有）
+SFT       exist   正确 0/5
+SFT       总计    正确 2/15
+
+
+===== SFT+DPO × 15 题 =====
+[P01·count] √ Q: 图中有几个红色圆形？  A: 1. 0
+2. 0
+3. 0
+4. 0
+5.（gold: 2）
+[P02·count] × Q: 图中有几个绿色圆形？  A: 1. 0.（gold: 3）
+[P03·count] × Q: 图中有几个黄色方形？  A: 其中有几个黄色方形？（gold: 2）
+[P04·count] × Q: 图中有几个黄色圆形？  A: 在图中，有几个黄色圆形？（gold: 4）
+[P05·count] √ Q: 图中有几个蓝色圆形？  A: 1. 3.（gold: 3）
+SFT+DPO   count   正确 2/5
+[P06·attr] × Q: 图中蓝色的图形是什么形状？  A: The image is a square with a red border. The square is filled with a light blue color.（gold: 方形）
+[P07·attr] × Q: 图中红色的图形是什么形状？  A: The image is a square with a red circle inside it. The circle is inside a square.（gold: 圆形）
+[P08·attr] × Q: 图中绿色的图形是什么形状？  A: The image is a circular image with a green square in the center.（gold: 方形）
+[P09·attr] × Q: 图中黄色的图形是什么形状？  A: The image is a circle with a green outline. The circle is positioned in the center of the image.（gold: 圆形）
+[P10·attr] × Q: 图中蓝色的图形是什么形状？  A: The image depicts a square-shaped grid with four squares arranged in a 4x4 grid. The squares are evenly（gold: 方形）
+SFT+DPO   attr    正确 0/5
+[P11·exist] × Q: 图里有没有黄色方形？  A: No.（gold: 有）
+[P12·exist] × Q: 图里有没有红色圆形？  A: No.（gold: 没有）
+[P13·exist] × Q: 图里有没有绿色圆形？  A: No.（gold: 有）
+[P14·exist] × Q: 图里有没有绿色方形？  A: No.（gold: 没有）
+[P15·exist] × Q: 图里有没有蓝色图形？  A: No.（gold: 没有）
+SFT+DPO   exist   正确 0/5
+SFT+DPO   总计    正确 2/15
+
+提示：把三阶段结果抄进报告表 2/表 4；另抽 3 题做人工忠实度评分（答案是否仅陈述图中事实）。

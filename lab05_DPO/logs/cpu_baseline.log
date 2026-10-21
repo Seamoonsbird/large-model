@@ -1,0 +1,19 @@
+/home/user/.local/lib/python3.12/site-packages/transformers/models/auto/modeling_auto.py:2284: FutureWarning: The class `AutoModelForVision2Seq` is deprecated and will be removed in v5.0. Please use `AutoModelForImageTextToText` instead.
+  warnings.warn(
+`torch_dtype` is deprecated! Use `dtype` instead!
+[P01·count] × Q: 图中有几个红色圆形？  A: 1.（gold: 2）
+[P02·count] × Q: 图中有几个绿色圆形？  A: 1.（gold: 3）
+[P03·count] × Q: 图中有几个黄色方形？  A: 1.（gold: 2）
+[P04·count] × Q: 图中有几个黄色圆形？  A: 1.（gold: 4）
+[P05·count] √ Q: 图中有几个蓝色圆形？  A: 1. 3.（gold: 3）
+[P06·attr] × Q: 图中蓝色的图形是什么形状？  A: 在图中，黄色的图形是一种深�（gold: 方形）
+[P07·attr] × Q: 图中红色的图形是什么形状？  A: The image is a square with a red circle inside it.（gold: 圆形）
+[P08·attr] × Q: 图中绿色的图形是什么形状？  A: 形状是黄色。（gold: 方形）
+[P09·attr] × Q: 图中黄色的图形是什么形状？  A: The image is a circle with a green outline.（gold: 圆形）
+[P10·attr] × Q: 图中蓝色的图形是什么形状？  A: 在图中，有三个图形。（gold: 方形）
+[P11·exist] × Q: 图里有没有黄色方形？  A: No.（gold: 有）
+[P12·exist] × Q: 图里有没有红色圆形？  A: No, there are no orange or red squares in the image.（gold: 没有）
+[P13·exist] × Q: 图里有没有绿色圆形？  A: No.（gold: 有）
+[P14·exist] × Q: 图里有没有绿色方形？  A: No.（gold: 没有）
+[P15·exist] × Q: 图里有没有蓝色图形？  A: No.（gold: 没有）
+基线总计正确 1/15

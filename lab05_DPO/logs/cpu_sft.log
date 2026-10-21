@@ -1,0 +1,9 @@
+[warn] 未检测到 bitsandbytes：回退为 bf16/fp32 基座 + LoRA（只训适配器的思想不变；NF4 路径需 NVIDIA GPU）
+/home/user/.local/lib/python3.12/site-packages/transformers/models/auto/modeling_auto.py:2284: FutureWarning: The class `AutoModelForVision2Seq` is deprecated and will be removed in v5.0. Please use `AutoModelForImageTextToText` instead.
+  warnings.warn(
+trainable params: 1,363,968 || all params: 257,848,896 || trainable%: 0.5290
+[train] 已启用梯度检查点（gradient checkpointing）降低峰值内存
+`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`...
+[sft] ep1 step10/15 loss=7.6401
+[sft] 已达 10 步，提前结束
+[sft] 适配器已保存到 ./sft_adapter

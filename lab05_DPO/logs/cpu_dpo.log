@@ -1,0 +1,29 @@
+[warn] 未检测到 bitsandbytes：回退为 bf16/fp32 基座 + LoRA（只训适配器的思想不变；NF4 路径需 NVIDIA GPU）
+/home/user/.local/lib/python3.12/site-packages/transformers/models/auto/modeling_auto.py:2284: FutureWarning: The class `AutoModelForVision2Seq` is deprecated and will be removed in v5.0. Please use `AutoModelForImageTextToText` instead.
+  warnings.warn(
+trainable params: 1,363,968 || all params: 257,848,896 || trainable%: 0.5290
+[train] 已启用梯度检查点（gradient checkpointing）降低峰值内存
+/home/user/.local/lib/python3.12/site-packages/peft/tuners/tuners_utils.py:331: UserWarning: Already found a `peft_config` attribute in the model. This will lead to having multiple adapters in the model. Make sure to know what you are doing!
+  warnings.warn(
+`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`...
+/home/user/.local/lib/python3.12/site-packages/torch/utils/checkpoint.py:242: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  check_backward_validity(args)
+[dpo] ep1 step1/17 loss=0.4279 margin=0.627
+[dpo] ep1 step2/17 loss=0.8205 margin=-0.240
+[dpo] 已达 2 步，提前结束
+'(ReadTimeoutError("HTTPSConnectionPool(host='hf-mirror.com', port=443): Read timed out. (read timeout=10)"), '(Request ID: c7c0e7c8-c21d-450e-83c8-a186625a5ed7)')' thrown while requesting HEAD https://hf-mirror.com/HuggingFaceTB/SmolVLM-256M-Instruct/resolve/main/config.json
+Retrying in 1s [Retry 1/5].
+'(ReadTimeoutError("HTTPSConnectionPool(host='hf-mirror.com', port=443): Read timed out. (read timeout=10)"), '(Request ID: 73bd20bc-28c5-4006-ba91-6ed6cfc96359)')' thrown while requesting HEAD https://hf-mirror.com/HuggingFaceTB/SmolVLM-256M-Instruct/resolve/main/config.json
+Retrying in 2s [Retry 2/5].
+'(ReadTimeoutError("HTTPSConnectionPool(host='hf-mirror.com', port=443): Read timed out. (read timeout=10)"), '(Request ID: c343a8ab-2a48-49e1-b36b-14c9b576061f)')' thrown while requesting HEAD https://hf-mirror.com/HuggingFaceTB/SmolVLM-256M-Instruct/resolve/main/config.json
+Retrying in 4s [Retry 3/5].
+'(ReadTimeoutError("HTTPSConnectionPool(host='hf-mirror.com', port=443): Read timed out. (read timeout=10)"), '(Request ID: d274eb23-2c97-4040-9357-d2d39a2d4ae9)')' thrown while requesting HEAD https://hf-mirror.com/HuggingFaceTB/SmolVLM-256M-Instruct/resolve/main/config.json
+Retrying in 8s [Retry 4/5].
+'(ReadTimeoutError("HTTPSConnectionPool(host='hf-mirror.com', port=443): Read timed out. (read timeout=10)"), '(Request ID: 394bbdd7-824d-4aa3-853f-afb7537e3dca)')' thrown while requesting HEAD https://hf-mirror.com/HuggingFaceTB/SmolVLM-256M-Instruct/resolve/main/config.json
+Retrying in 8s [Retry 5/5].
+'(ReadTimeoutError("HTTPSConnectionPool(host='hf-mirror.com', port=443): Read timed out. (read timeout=10)"), '(Request ID: de8d46a4-eeca-4f68-a982-2aba56ba98d1)')' thrown while requesting HEAD https://hf-mirror.com/HuggingFaceTB/SmolVLM-256M-Instruct/resolve/main/config.json
+/home/user/.local/lib/python3.12/site-packages/peft/utils/other.py:1508: UserWarning: Unable to fetch remote file due to the following error (ReadTimeoutError("HTTPSConnectionPool(host='hf-mirror.com', port=443): Read timed out. (read timeout=10)"), '(Request ID: de8d46a4-eeca-4f68-a982-2aba56ba98d1)') - silently ignoring the lookup for the file config.json in HuggingFaceTB/SmolVLM-256M-Instruct.
+  warnings.warn(
+/home/user/.local/lib/python3.12/site-packages/peft/utils/save_and_load.py:313: UserWarning: Could not find a config file in HuggingFaceTB/SmolVLM-256M-Instruct - will assume that the vocabulary was not modified.
+  warnings.warn(
+[dpo] 适配器已保存到 ./dpo_adapter
