@@ -1,0 +1,27 @@
+cnn_fp32 {'acc': 0.9799, 'params': 94410, 'mb': 0.3618659973144531, 'lat': 1.307482000129312}
+prune50 {'acc': 0.9741, 'params': 24170, 'mb': 0.09306716918945312, 'lat': 0.9421334998478414}
+kd_student {'acc': 0.9763, 'params': 24170, 'mb': 0.09306716918945312, 'lat': 0.927606499999456}
+/home/user/Doubao/chats/38453420968790274/code/compress.py:128: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  prepared = prepare_fx(m, get_default_qconfig_mapping('fbgemm'), ex)
+/home/user/.local/lib/python3.12/site-packages/torch/ao/quantization/observer.py:1039: UserWarning: Please use quant_min and quant_max to specify the range for observers.                     reduce_range will be deprecated in a future release of PyTorch.
+  super().__init__(
+/home/user/Doubao/chats/38453420968790274/code/compress.py:134: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  return convert_fx(prepared)
+/home/user/.local/lib/python3.12/site-packages/torch/ao/nn/quantized/modules/conv.py:101: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/quantized/Quantizer.cpp:111.)
+  qweight = torch._empty_affine_quantized(
+cnn_int8 {'acc': 0.9781, 'params': 94410, 'mb': 0.0890655517578125, 'lat': 0.4290940000828414}
+kd_int8 {'acc': 0.9746, 'params': 24170, 'mb': 0.0225830078125, 'lat': 0.33926549986063037}
+ours {'acc': 0.9667, 'params': 15883, 'mb': 0.014782905578613281, 'lat': 0.3469210003004264}
+cnn_fp32 {'clean': 0.9799, 'noise0.1': 0.97, 'noise0.2': 0.9036, 'occl4': 0.8297, 'occl6': 0.5637}
+kc_student_fp32 {'clean': 0.9763, 'noise0.1': 0.9405, 'noise0.2': 0.7723, 'occl4': 0.8146, 'occl6': 0.3132}
+ours_int8 {'clean': 0.9667, 'noise0.1': 0.8832, 'noise0.2': 0.6443, 'occl4': 0.8354, 'occl6': 0.5059}

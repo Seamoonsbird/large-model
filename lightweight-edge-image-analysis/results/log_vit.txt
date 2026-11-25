@@ -1,0 +1,6 @@
+vit_mnist params 139018
+[vit_mnist] ep1 train_loss=1.5802 val_acc=0.7742 (68.9s)
+[vit_mnist] ep2 train_loss=0.6767 val_acc=0.9467 (65.6s)
+[vit_mnist] ep3 train_loss=0.4437 val_acc=0.9705 (62.0s)
+[vit_mnist] ep4 train_loss=0.3799 val_acc=0.9778 (60.0s)
+vit_mnist best 0.9778

@@ -1,0 +1,5 @@
+cnn_small_mnist params 24170
+[cnn_small_mnist] ep1 train_loss=1.3834 val_acc=0.8868 (38.4s)
+[cnn_small_mnist] ep2 train_loss=0.5040 val_acc=0.9501 (40.8s)
+[cnn_small_mnist] ep3 train_loss=0.4495 val_acc=0.9698 (40.9s)
+cnn_small_mnist best 0.9698

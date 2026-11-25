@@ -1,0 +1,7 @@
+cnn_mnist params 94410
+[cnn_mnist] ep1 train_loss=1.2496 val_acc=0.7860 (106.5s)
+[cnn_mnist] ep2 train_loss=0.4644 val_acc=0.8217 (101.0s)
+[cnn_mnist] ep3 train_loss=0.4127 val_acc=0.9687 (101.8s)
+[cnn_mnist] ep4 train_loss=0.3898 val_acc=0.9799 (100.0s)
+[cnn_mnist] ep5 train_loss=0.3777 val_acc=0.9781 (100.5s)
+cnn_mnist best 0.9799

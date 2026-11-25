@@ -1,0 +1,28 @@
+{
+  "tag": "cnn_small_mnist",
+  "params": 24170,
+  "best_acc": 0.9698,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.3834182302157083,
+      "val_loss": 0.4837736029148102,
+      "val_acc": 0.8868,
+      "sec": 38.4
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.5040116802851359,
+      "val_loss": 0.25302844729423524,
+      "val_acc": 0.9501,
+      "sec": 40.8
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.4494618593533834,
+      "val_loss": 0.1992061809539795,
+      "val_acc": 0.9698,
+      "sec": 40.9
+    }
+  ]
+}

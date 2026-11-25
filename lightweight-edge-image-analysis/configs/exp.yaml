@@ -1,0 +1,23 @@
+# 全部实验配置（与 compress.py / train.py 中默认值一致）
+seed: 42
+dataset:
+  name: mnist            # mnist | fashion
+  batch_size: 128
+  normalize: {mean: 0.1307, std: 0.3081}
+  augment: translate     # pad 2 + random crop 28x28
+model:
+  backbone: cnn          # cnn | vit
+  cnn_widths: [32, 64, 128]
+  vit: {patch: 4, dim: 64, depth: 4, heads: 4}
+train:
+  optimizer: AdamW
+  lr: 0.002
+  weight_decay: 0.0005
+  epochs: 5
+  scheduler: OneCycleLR
+  label_smoothing: 0.05
+compress:
+  prune_keep: 0.5
+  distill: {T: 4.0, alpha: 0.7, student_width: 0.5, epochs: 4}
+  int8: {backend: fbgemm, calib_batches: 8, calib_bs: 64}
+  combo_prune_keep: 0.8

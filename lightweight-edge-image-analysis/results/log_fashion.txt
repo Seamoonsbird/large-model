@@ -1,0 +1,7 @@
+cnn_fashion params 94410
+[cnn_fashion] ep1 train_loss=1.2364 val_acc=0.6308 (84.3s)
+[cnn_fashion] ep2 train_loss=0.7604 val_acc=0.7598 (86.1s)
+[cnn_fashion] ep3 train_loss=0.6750 val_acc=0.8028 (85.6s)
+[cnn_fashion] ep4 train_loss=0.6206 val_acc=0.8622 (85.4s)
+[cnn_fashion] ep5 train_loss=0.5908 val_acc=0.8776 (85.6s)
+cnn_fashion best 0.8776

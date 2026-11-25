@@ -1,0 +1,7 @@
+/home/user/.local/lib/python3.12/site-packages/torch/ao/nn/quantized/modules/utils.py:72: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/quantized/Quantizer.cpp:111.)
+  qweight = torch.quantize_per_tensor(
+vit {'acc': 0.9778, 'params': 139018, 'mb': 0.5303115844726562, 'lat': 1.1073689997829206} {'acc': 0.9779, 'params': 139018, 'mb': 0.27497100830078125, 'lat': 1.4097895004852035}
+scratch {'acc': 0.9698, 'params': 24170, 'mb': 0.09306716918945312, 'lat': 0.8384740003748448}
+/home/user/.local/lib/python3.12/site-packages/torch/ao/quantization/observer.py:1039: UserWarning: Please use quant_min and quant_max to specify the range for observers.                     reduce_range will be deprecated in a future release of PyTorch.
+  super().__init__(
+fashion {'acc': 0.8776, 'params': 94410, 'mb': 0.3618659973144531, 'lat': 1.3775365000583406} {'acc': 0.8767, 'params': 94410, 'mb': 0.0890655517578125, 'lat': 0.41896900029314565}
